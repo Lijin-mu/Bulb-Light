@@ -1,0 +1,54 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family:$font-main;
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: rem(24);
+  min-height: 100%;
+  letter-spacing: -1%;
+  color: $secondary-color;
+}
+
+body{
+  background-color: #fff;
+}
+div, button{
+  transition: all 0.2s;
+}
+
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.container{
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  margin: auto;
+  padding: 100px 0;
+}
+.bulbs{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+

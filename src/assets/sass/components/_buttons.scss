@@ -1,0 +1,45 @@
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .btn{
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff !important;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    &.on{
+        background: $primary-color;
+        &:hover,
+        &:focus{
+            background: lighten($color:$primary-color, $amount: 10);
+        }
+    }
+
+    &.off{
+        background: $secondary-color;
+        &:hover,
+        &:focus{
+            background: darken($color: $secondary-color, $amount: 10);
+        }
+    }
+
+    &.blink{
+        background: $accent-color;
+        &:hover,
+        &:focus{
+            background: lighten($color:$accent-color, $amount: 10);
+        }
+    }
+  }
+  
+  .btn + .btn{
+    margin-left: 15px;
+  }
